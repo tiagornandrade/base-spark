@@ -28,6 +28,22 @@ O arquivo `docker-compose.yml` contém a configuração do cluster Spark. Você 
 docker-compose up
 ```
 
+Cria o ambiente virtual
+
+```
+virtualenv venv
+```
+
+Ativa o ambiente virtual
+```
+source venv/bin/activate
+```
+
+E executa o arquivo Python
+```
+python3 hello-pyspark.py
+```
+
 Isso criará os contêineres para o nó master e os nós worker conforme definido no arquivo `docker-compose.yml`.
 
 ## Personalização
